@@ -14,12 +14,12 @@ var gulpfileGenerator = module.exports = generators.Base.extend({
     self.prompt([{
       type: 'value',
       name: 'configFile',
-      message: 'What is your relative path for your config file for your angular constants (ngConstant) ?',
+      message: 'What is the relative path to your config file for your angular constants (ngConstant)?',
       default: './config.json'
     }, {
       type: 'value',
       name: 'dist',
-      message: 'What is your relative directory path for your angular constants declaration (ngConstant) ?',
+      message: 'What is the relative path to your angular constants declaration (ngConstant)?',
       default: './dist'
     }], function (answers) {
       _.assign(self.vars, answers);
